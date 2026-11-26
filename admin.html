@@ -1,0 +1,19 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>لوحة التحكم | زونيكس</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap"><span class="logo">زو<b>نيكس</b> · لوحة التحكم</span><button class="btn ghost sm" id="out" hidden>خروج</button></div></header>
+<main class="wrap" style="padding:20px 18px 60px">
+<div id="login" class="card" style="max-width:380px;margin:40px auto" hidden><h3 style="margin-bottom:8px">دخول صاحب المتجر</h3>
+<label>الإيميل</label><input id="em" type="email" autocomplete="username"><label>الباسورد</label><input id="pw" type="password" autocomplete="current-password"><div class="err" id="le"></div><br><button class="btn full" id="lb">دخول</button></div>
+<div id="app" hidden>
+<div class="tab"><button data-t="orders" class="on">الطلبات <span class="bell" id="nb" hidden></span></button><button data-t="designs">التصاميم</button><button data-t="settings">الإعدادات</button></div>
+<section id="t_orders"><div class="bar" id="flt"></div><div class="tbl" id="list"></div></section>
+<section id="t_designs" hidden>
+ <div class="card" style="margin-bottom:16px"><h3 style="margin-bottom:6px">إضافة تصميم جديد</h3>
+ <div class="row2"><div><label>اسم التصميم</label><input id="dn" placeholder="مثال: قطة الليل"></div><div><label>سعر خاص (اختياري)</label><input id="dp" type="number" placeholder="سيب فاضي لسعر الهودي العادي"></div></div>
+ <label class="file" id="dz" style="margin-top:12px"><input type="file" id="di" accept="image/*"><span id="dzt">اختار صورة التصميم (يفضل PNG)</span></label>
+ <div class="err" id="de"></div><button class="btn" id="da" style="margin-top:10px">إضافة التصميم</button></div>
+ <div class="dg" id="dgrid"></div></section>
+<section id="t_settings" hidden><div class="card"><div class="row2"><div><label>سعر الهودي الأساسي</label><input id="s_price" type="number"></div><div><label>رقم فودافون كاش</label><input id="s_wallet"></div>
+<div><label>اسم صاحب المحفظة</label><input id="s_walletName"></div><div><label>رقم واتساب (بصيغة 20...)</label><input id="s_whatsapp"></div>
+<div><label>شحن عادي</label><input id="s_ship_default" type="number"></div><div><label>شحن الصعيد/البحر الأحمر/مطروح</label><input id="s_ship_far" type="number"></div></div><br><button class="btn" id="sv">حفظ</button> <span id="sm" style="color:var(--ok)"></span></div></section>
+</div></main><script src="config.js"></script><script src="data.js"></script><script src="api.js"></script><script src="admin.js"></script></body></html>
