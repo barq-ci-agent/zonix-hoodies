@@ -1,0 +1,58 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>زونيكس | هوديز بتصاميم مميزة</title>
+<meta name="description" content="اختار تصميمك المفضل، حدد اللون والمقاس، واطلب هودي زونيكس. الشحن لكل المحافظات.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap"><a class="logo" href="#top">زو<b>نيكس</b></a>
+<nav><a href="#gallery">التصاميم</a><a href="#how">كيف تطلب</a><a href="#shipping">الشحن</a><a href="#faq">أسئلة</a><a href="#track">تتبع طلبك</a></nav>
+<a class="btn sm" href="#gallery">تصفح التصاميم</a></div></header>
+<main id="top">
+<section class="hero wrap"><div class="tag">هوديز بتصاميم مميزة</div><h1>اختار تصميمك.. <span>ولبسه</span> بستايلك</h1>
+<p>تصاميم حصرية على هوديز بخامة مريحة. اختار التصميم واللون والمقاس وإحنا نجهزه ونوصله لحد بابك.</p>
+<a class="btn" href="#gallery">شوف التصاميم</a>
+<div class="chips"><span>شحن لكل المحافظات</span><span>عربون 50% والباقي عند الاستلام</span><span>ألوان ومقاسات متعددة</span></div></section>
+<section class="wrap" id="gallery"><h2 class="sec">التصاميم</h2><div class="gal" id="gal"><div class="empty">جاري التحميل...</div></div></section>
+<section class="wrap" id="how"><h2 class="sec">كيف تطلب؟</h2><div class="how">
+<div><i>1</i><b>اختار التصميم</b>اضغط على التصميم اللي عجبك.</div><div><i>2</i><b>حدد اللون والمقاس</b>اللون والشكل والمقاس والكمية.</div><div><i>3</i><b>حوّل العربون</b>50% على فودافون كاش وارفع صورة التحويل.</div><div><i>4</i><b>استلم هودي</b>نأكد معاك على واتساب ونشحنلك والباقي عند الاستلام.</div></div></section>
+<section class="wrap" id="shipping"><h2 class="sec">الشحن والدفع</h2><div class="info"><div><b id="shA"></b><span>جميع المحافظات</span></div><div><b id="shB"></b><span>الصعيد والبحر الأحمر ومطروح</span></div><div><b>50%</b><span>عربون بفودافون كاش، والباقي عند الاستلام</span></div></div></section>
+<section class="wrap" id="track"><h2 class="sec">تتبع طلبك</h2><div class="card trk"><input id="tcode" placeholder="اكتب رقم الطلب مثال ZX-123456" dir="ltr" style="text-align:center"><button class="btn" id="tbtn">تتبع</button><div id="tres"></div></div></section>
+<section class="wrap" id="faq"><h2 class="sec">أسئلة شائعة</h2><div class="faq">
+<details><summary>إزاي أدفع؟</summary><p>بتحول 50% من الإجمالي على رقم فودافون كاش اللي بيظهر في خطوة الدفع، وبترفع صورة التحويل، والباقي بتدفعه للمندوب عند الاستلام.</p></details>
+<details><summary>أد إيه التوصيل؟</summary><p>بيتم التواصل معاك على واتساب بعد تأكيد العربون ويتم تحديد موعد الشحن.</p></details>
+<details><summary>ينفع أغير المقاس أو اللون بعد الطلب؟</summary><p>أيوه، كلمنا على واتساب بسرعة قبل التجهيز.</p></details>
+<details><summary>أقدر ألغي الطلب؟</summary><p>قبل الشحن تقدر تلغي بالتواصل معانا على واتساب.</p></details></div></section>
+</main>
+<footer><div class="wrap"><b class="logo">زو<b>نيكس</b></b><div>الدفع: 50% عربون والباقي عند الاستلام · <a id="waf" target="_blank" style="color:var(--y)">تواصل واتساب</a></div></div></footer>
+<a class="wa" id="wa" target="_blank">واتساب</a>
+<div class="ov-bg" id="modal" hidden><div class="sheet" role="dialog" aria-modal="true">
+ <button class="x" id="mx" aria-label="إغلاق">×</button>
+ <div id="flow">
+  <div class="prod"><div class="stage" id="stage"></div><div><h3 id="pname"></h3><div class="pr" id="pprice"></div></div></div>
+  <div class="acc" id="s1"><button class="ah" type="button"><i>1</i> اختار اللون والمقاس <em></em></button><div class="ab">
+   <label>اللون</label><div class="sw" id="colors"></div><div class="cname" id="cn"></div>
+   <label>الشكل</label><div class="opts" id="shapes"></div>
+   <label>المقاس</label><div class="opts" id="sizes" style="grid-template-columns:repeat(5,1fr)"></div>
+   <label>الكمية</label><div class="qty"><button type="button" id="mn">−</button><b id="q">1</b><button type="button" id="pl">+</button></div>
+   <label>مكان الطباعة</label><div class="opts" id="pos"></div>
+   <div class="err" id="e1"></div><button class="btn full" type="button" data-next="2">التالي: بياناتك</button></div></div>
+  <div class="acc" id="s2"><button class="ah" type="button"><i>2</i> بياناتك <em></em></button><div class="ab">
+   <label>الاسم</label><input id="name" autocomplete="name" placeholder="الاسم بالكامل">
+   <div class="row2"><div><label>رقم الموبايل</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="01xxxxxxxxx" maxlength="11"></div><div><label>رقم تاني (اختياري)</label><input id="phone2" type="tel" inputmode="numeric" maxlength="11"></div></div>
+   <label>المحافظة</label><select id="gov"><option value="">اختار المحافظة</option></select>
+   <label>العنوان بالتفصيل</label><textarea id="addr" placeholder="المدينة، الشارع، رقم العمارة"></textarea>
+   <label>ملاحظات (اختياري)</label><input id="notes" placeholder="أي ملاحظة على الطلب">
+   <div class="err" id="e2"></div><button class="btn full" type="button" data-next="3">التالي: الدفع</button></div></div>
+  <div class="acc" id="s3"><button class="ah" type="button"><i>3</i> الدفع وتأكيد الطلب <em></em></button><div class="ab">
+   <div class="sum" id="sum"></div>
+   <div class="pay"><div>حوّل العربون على فودافون كاش:</div><div class="num" id="wal"></div><div style="color:var(--m);font-size:14px;text-align:center" id="walN"></div><button class="btn ghost full" type="button" id="cp">نسخ الرقم</button></div>
+   <label class="file" id="pz"><input type="file" id="proof" accept="image/*"><span id="pzt">ارفع صورة (سكرين شوت) التحويل</span></label>
+   <div class="err" id="e3"></div><button class="btn full" id="go" type="button">تأكيد الطلب</button></div></div>
+ </div>
+ <div id="ok" hidden class="done"><div class="chk">✓</div><h2>تم استلام طلبك</h2><div class="code" id="code"></div>
+  <div class="sum" id="okSum" style="text-align:right"></div>
+  <p style="color:var(--m);margin:12px 0">هنراجع التحويل ونأكد معاك على واتساب. احتفظ برقم الطلب لتتبعه من الموقع.</p>
+  <a class="btn full" id="wa2" target="_blank">أكد طلبك على واتساب</a><button class="btn ghost full" id="close2" style="margin-top:8px">رجوع للتصاميم</button></div>
+</div></div>
+<script src="config.js"></script><script src="data.js"></script><script src="api.js"></script><script src="app.js"></script>
+</body></html>
